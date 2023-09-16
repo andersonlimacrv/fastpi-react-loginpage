@@ -10,11 +10,11 @@ This project is a Full Stack application that provides a login page built with R
 
 ## ✨ Features
 
-- [x] **React**: We use React to create a responsive and user-friendly user interface.
-- [x] **FastAPI**: To build an asynchronous API, FastAPI is a high-performance Python framework that offers automatic documentation and is highly scalable.
-- [x] **PostgreSQL**: We use PostgreSQL as the database to store user information securely.
-- [x] **TailwindCSS**: TailwindCSS allows us to create an elegant and customizable appearance for the application.
-- [x] **JWT-Based Authentication**: We implement authentication based on JSON Web Tokens to ensure that only authorized users access protected resources.
+- [x] **React**: To create a responsive and user-friendly user interface.
+- [x] **FastAPI**: a high-performance Python framework, to build an asynchronous API. It offers automatic documentation and is highly scalable.
+- [x] **PostgreSQL**: as the database to securely store user information.
+- [x] **TailwindCSS**:to create an elegant and customizable appearance for the application.
+- [x] **JWT Auth**: authentication based on JSON Web Tokens (JWT) to ensure that only authorized users access protected resources.
 
 ## 📁 Project Structure
 
