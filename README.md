@@ -18,9 +18,9 @@ This project is a Full Stack application that provides a login page built with R
 
 ## 📁 Project Structure
 
-- `frontend/`: Contains the code for the front end developed in React.
-- `backend/`: Contains the code for the backend built with FastAPI.
-- `docs/`: Project documentation, including information on how to set up and run the project.
+- `client`: Contains the code for the front end developed in React.
+- `server`: Contains the code for the backend built with FastAPI.
+- `docs`: Project documentation, including information on how to set up and run the project.
 
 ## ▶️ How to Run
 
