@@ -1,0 +1,7 @@
+┏━ server
+┃ ┣━━ app
+┃ ┃ ┣━━ controller - `Manage of the REST interface to the business logic`
+┃ ┃ ┣━━ repository - `Storage of the entity/model bean in system`
+┃ ┃ ┣━━ model - `Model/entity is data sctructure like table from ERD`
+┃ ┃ ┗━━ service - `Business logic implementation`
+┃ ┗━━ media - `Put default photo user when register`
