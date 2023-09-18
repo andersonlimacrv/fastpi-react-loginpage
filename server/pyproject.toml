@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Anderson_Carvalho <andersonlimacrv@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.23.2"
+fastapi = "^0.103.1"
+sqlalchemy = "1.4.41"
+sqlmodel = "^0.0.8"
+asyncpg = "^0.28.0"
+psycopg2 = "^2.9.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "app.main:start"
