@@ -6,7 +6,7 @@ def init_app():
     db.init()
 
     app = FastAPI(
-        tittle= "Login App",
+        title="Login App",  
         description="Login Page",
         version="1.0.0"
     )
