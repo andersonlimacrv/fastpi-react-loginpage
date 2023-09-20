@@ -8,6 +8,9 @@ from dotenv import load_dotenv
 load_dotenv() 
 
 DATABASE_URL = os.getenv('DATABASE_URL')
+SECRET_KEY = os.getenv('SECRET_KEY')
+ALGORITHM = os.getenv('ALGORITHM')
+ACESS_TOKEN_EXPIRE = int(os.getenv('ACESS_TOKEN_EXPIRE'))
 
 class AsynsDatabaseSession:
     def __init__(self) -> None:
