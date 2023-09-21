@@ -1,4 +1,7 @@
-from sqlalchemy import update as sql_update, delete as sql_delete
+import email
+from multiprocessing import synchronize
+
+from sqlalchemy import update as sql_update
 from sqlalchemy.future import select
 
 from app.config import db, commit_rollback

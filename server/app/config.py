@@ -22,7 +22,7 @@ class AsynsDatabaseSession:
     
     def init(self):
         self.engine = create_async_engine(DATABASE_URL, future=True, echo=True)
-        self.session = sessionmaker(self.engine, expire_on_commit=False ,class_=AsyncSession)
+        self.session = sessionmaker(self.engine, expire_on_commit=False, class_=AsyncSession)()
 
     async def create_all(self):
         async with self.engine.begin() as conn:

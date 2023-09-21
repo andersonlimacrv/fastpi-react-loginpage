@@ -5,6 +5,7 @@ from sqlmodel import SQLModel, Field, Relationship
 from app.model.mixins import TimeMixin
 
 
+
 class Sex(str, Enum):
     MALE = "MALE"
     FEMALE = "FEMALE"

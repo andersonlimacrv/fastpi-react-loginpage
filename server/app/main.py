@@ -1,6 +1,8 @@
-import uvicorn 
-from fastapi import FastAPI, APIRouter
+import uvicorn
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from app.config import db
+from app.service.auth_service import generate_role
 
 def init_app():
     db.init()
@@ -10,14 +12,20 @@ def init_app():
         description="Login Page",
         version="1.0.0"
     )
-
+    
     @app.on_event("startup")
     async def startup():
         await db.create_all()
+        await generate_role()
 
     @app.on_event("shutdown")
     async def shutdown():
         await db.close()
+
+    from app.controller import authentication, users
+
+    app.include_router(authentication.router)
+    app.include_router(users.router)
 
     return app
 
